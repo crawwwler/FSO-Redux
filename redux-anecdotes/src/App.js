@@ -10,17 +10,9 @@ const App = () => {
     const stateOfNoti = useSelector(state => state.notif)
     const dispatch = useDispatch()
 
-    /*useEffect(() => {
-        server
-            .getAll()
-            .then(notes => {
-                dispatch(setAnecdotes(notes))
-            })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])*/
-
     useEffect(() => {
         dispatch(initialData())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
